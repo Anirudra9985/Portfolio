@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import { Menu, X, ArrowRight, Github, Linkedin, Mail, ExternalLink, ChevronDown } from 'lucide-react';
 
@@ -31,16 +30,16 @@ export default function Portfolio() {
     },
   };
 
-  // const floatingVariants = {
-  //   animate: {
-  //     y: [0, -20, 0],
-  //     transition: {
-  //       duration: 4,
-  //       repeat: Infinity,
-  //       ease: 'easeInOut',
-  //     },
-  //   },
-  // };
+  const floatingVariants = {
+    animate: {
+      y: [0, -20, 0],
+      transition: {
+        duration: 4,
+        repeat: Infinity,
+        ease: 'easeInOut',
+      },
+    },
+  };
 
   const projects = [
     {
